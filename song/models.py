@@ -1,7 +1,7 @@
 from django.db import models
 
-class Artist(models.Model):
-    nickname = models.CharField(verbose_name='Ник', max_length=255)
+class Song(models.Model):
+    title = models.CharField(verbose_name='Ник', max_length=255)
     firts_name = models.CharField(verbose_name='Имя', max_length=255)
     second_name = models.CharField(verbose_name='Фамилия', max_length=255)
     description = models.TextField(verbose_name='Дата рождения')

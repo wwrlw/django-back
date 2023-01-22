@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #Custom apps
     'authentication',
+    'artist'
+    'song'
 ]
 
 MIDDLEWARE = [
