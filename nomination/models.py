@@ -1,3 +1,7 @@
 from django.db import models
 
-# Create your models here.
+# class Nomination(models.Model):
+    #group
+    #fit
+    #artist
+    #album

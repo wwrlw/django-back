@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'album',
     'fit',
     'nomination',
+    'group',
 ]
 
 MIDDLEWARE = [
