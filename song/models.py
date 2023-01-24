@@ -1,5 +1,6 @@
 from django.db import models
 from artist.models import Artist
+from fit.models import Fit
 
 
 class Song(models.Model):
@@ -12,6 +13,7 @@ class Song(models.Model):
     cover = models.ImageField(verbose_name='Обложка', upload_to='songs/photos')
     realised_at = models.DateField(verbose_name='Выпушен', auto_now=False, auto_now_add=False)
     # number_of_voutes = models.IntegerField(verbose_name='Количество голосов')
+    fit = models.ForeignKey(Fit, verbose_name='Фиты', on_delete=models.PROTECT)
     
 
     def __str__ (self):
