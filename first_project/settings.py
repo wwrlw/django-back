@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'song',
     'album',
     'fit',
-    'nomination',
     'group',
 ]
 
