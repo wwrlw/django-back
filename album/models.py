@@ -1,11 +1,12 @@
 from django.db import models
 from artist.models import Artist
-
+from song.models import Song
 
 class Album(models.Model):
     title = models.CharField(verbose_name='Название', max_length=255)
     
     artist = models.ManyToManyField(to=Artist, related_name='album', verbose_name='Исполнители')
+    song = models.ManyToManyField(to=Song, related_name='album', verbose_name='Песни')
 
     description = models.TextField(verbose_name='Описание')
     audio_file = models.FileField(verbose_name='Аудиофайл', upload_to='albums/audios')

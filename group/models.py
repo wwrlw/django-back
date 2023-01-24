@@ -5,7 +5,6 @@ class Group(models.Model):
     description = models.TextField(verbose_name='Описание')
     cover = models.ImageField(verbose_name='Обложка', upload_to='groups/photos')
     created_at = models.DateField(verbose_name='Создана в:')
-    
 
     def __str__ (self):
         return self.title
