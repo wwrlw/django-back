@@ -1,4 +1,4 @@
-from rest_framework.routers import DefaultRouter, SimpleRouter
+from rest_framework.routers import DefaultRouter
 from artist.views import ArtistViewSet
 
 router = DefaultRouter()
