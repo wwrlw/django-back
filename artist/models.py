@@ -8,7 +8,7 @@ class Artist(models.Model):
     description = models.TextField(verbose_name='Био')
     date_of_birth = models.DateField(verbose_name='Дата рождения')
     photo = models.ImageField(verbose_name='Фото', upload_to='artist/photos')
-    group = models.ForeignKey(Group, verbose_name='Группы', on_delete=models.PROTECT)
+    group = models.ForeignKey(Group, verbose_name='Группы', on_delete=models.CASCADE, null=True)
 
     def __str__ (self):
         return self.nickname
